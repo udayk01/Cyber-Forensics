@@ -38,22 +38,34 @@
   
 ![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/ff9be93c-3573-4fef-9e9b-7d8fa0c051c4)
 
-- Again we have to enter ```fdisk –l``` command and insert usb drive
+- **Again we have to enter ```fdisk –l``` command and insert usb drive**
 
 ![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/59088eda-5453-41e7-bdba-5e30aa00d5bb)
 
-- We have to split usb with the help of dc3dd tool
+- **We have to split usb with the help of dc3dd tool**
 
   ```dc3dd if=/dev/sdb hash=sha256 log=split_usb ofs=test.img.000 ofsz=500M```
 
   ![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/beab72e0-4618-433f-88cd-b447ae7dee78)
 
-- The hash=sha256 parameter generates the SHA 256 of the created disk image. It is present in the results
+- **The hash=sha256 parameter generates the SHA 256 of the created disk image. It is present in the re**sults
 
-- Now we can verify this segments by ls
+- **Now we can verify this segments by ls**
 
   ![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/bc6a286f-ae52-46a0-a8b2-c070f3771822)
 
-- Then we can permanently wipe the data from the usb drive using this command with text pattern
+- **Then we can permanently wipe the data from the usb drive using this command with text pattern**
 
   ```dc3dd wipe=/dev/sdb tpat=cfsi```
+
+  ![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/c424f6f6-2396-404d-8d44-56ee6d89736b)
+
+- **Then again we type ```fdisk –l```**
+
+  ![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/12821b1b-cba4-4227-afca-cc3c5195a164)
+
+- **Alternatively, we can use Binary pattern to wipe the data in usb drive instead of text pattern**
+
+  ```dc3dd wipe=/dev/sdb pat=000111```
+
+  ![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/b2db0497-09a5-4252-9e41-a30e82f9c62e)
