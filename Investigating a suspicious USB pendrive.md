@@ -24,19 +24,21 @@
 
 - **We can also create disk image by explicitly specifying block size and adding error handling to it**
 
-
+![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/c2f2d681-30e3-4e40-b48b-6deb6888cb94)
 
 ## DC3DD
 
 ### Now install dc3dd
 
+``` apt install dc3dd```
+
 ![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/36a56a84-ba7d-418c-9c26-e934bd8e7f4b)
 
-- man dc3dd
+- ```man dc3dd```
   
 ![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/ff9be93c-3573-4fef-9e9b-7d8fa0c051c4)
 
-- Again we have to enter fdisk –l command and insert usb drive
+- Again we have to enter ```fdisk –l``` command and insert usb drive
 
 ![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/59088eda-5453-41e7-bdba-5e30aa00d5bb)
 
