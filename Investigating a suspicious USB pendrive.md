@@ -46,3 +46,14 @@
 
   ```dc3dd if=/dev/sdb hash=sha256 log=split_usb ofs=test.img.000 ofsz=500M```
 
+  ![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/beab72e0-4618-433f-88cd-b447ae7dee78)
+
+- The hash=sha256 parameter generates the SHA 256 of the created disk image. It is present in the results
+
+- Now we can verify this segments by ls
+
+  ![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/bc6a286f-ae52-46a0-a8b2-c070f3771822)
+
+- Then we can permanently wipe the data from the usb drive using this command with text pattern
+
+  ```dc3dd wipe=/dev/sdb tpat=cfsi```
