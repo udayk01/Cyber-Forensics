@@ -10,7 +10,7 @@
 
 - We would insert our usb drive and enter the command ```fdisk –l```
   
-![Screenshot 2024-04-05 191530](https://github.com/udayk01/Cyber-Forensics/assets/52235763/13d4adc5-c9fc-44d3-a955-34c0ccd3858a)
+![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/da95ee8e-fa79-4d1c-b2eb-5313c8027bd4)
 
 - We create a disk image of inserted usb drive
 
