@@ -52,3 +52,59 @@
 
 > now we will use dd image to recover the image by using ```Foremost``` tool
 
+### Foremost for file recovery
+
+> Install Foremost
+
+> If Foremost is not already installed on your system, you can install it using the package manager of your operating system.
+
+```sudo apt-get install foremost```
+
+![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/f70cb3ef-58a5-4995-97f7-a7e29238229a)
+
+> Run Foremost:
+
+> Once Foremost is successfully started, a Terminal opens, displaying the program version, creators, and some of the many switches for usage:
+
+![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/1a3ed961-3815-4062-94ad-62b7b50e170b)
+
+> To have a better understanding of Foremost and the switches used, try browsing the Foremost System Manager's Manual.This can be done by entering the following command:
+
+```man foremost```
+
+![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/1c01a1cf-8d55-4fc7-bd0e-35e3a2a6a9a3)
+
+> The syntax for using Foremost is as follows:
+
+```foremost -i (forensic image) -o (output folder) -options```
+
+> To recover the jpg image from from the dd image file, use the following command syntax:
+
+```foremost -t jpg -i <input_file> -o <output_directory>```
+
+> -t jpg: This option specifies that Foremost should only recover JPG (JPEG) files.
+
+> <input_file>: Replace this with the path to your dd image file.
+
+> <output_directory>: Replace this with the directory where you want the recovered JPG images to be saved.
+
+> This command will instruct Foremost to scan the dd image file for JPG images and recover them to the specified output directory.
+
+![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/855dc7ac-2765-465f-a966-236aa29d4568)
+
+> Recovery completed. NOW go to Desktop and check whether there is a file named Recover present or not.
+
+![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/6a31a256-b3a7-4fa6-971d-faf4fe0b4f3b)
+
+> Now open and check wheather the image is recoverd or not.
+
+![image](https://github.com/udayk01/Cyber-Forensics/assets/52235763/08d7a8ce-14f2-4dea-9767-6988bbac9d43)
+
+> Our image has been successfully recovered using ```Foremost``` tool.
+
+
+
+
+
+
+
